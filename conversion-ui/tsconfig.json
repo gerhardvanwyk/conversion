@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "outDir": "../sam-service/src/main/resources/templates/",
+        "sourceMap": true,
+        "inlineSources": true,
+        "strict": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "es2016",
+        "skipLibCheck": false,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "allowJs": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
