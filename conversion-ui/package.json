@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install": "install",
     "compile": "webpack --debug --config=config/webpack.dev.js",
     "serve": "lite-server --baseDir='./build'",
     "run-dev": "npm run compile & npm run serve",

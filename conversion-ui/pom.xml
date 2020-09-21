@@ -28,6 +28,7 @@
                         <goals>
                             <goal>install-node-and-npm</goal>
                         </goals>
+                        <phase>process-resources</phase>
                         <configuration>
                             <nodeVersion>v10.16.3</nodeVersion>
                         </configuration>
@@ -35,6 +36,17 @@
 
                     <execution>
                         <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <phase>generate-resources</phase>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>npm compile</id>
                         <goals>
                             <goal>npm</goal>
                         </goals>

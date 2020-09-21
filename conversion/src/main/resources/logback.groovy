@@ -4,10 +4,10 @@ import ch.qos.logback.classic.encoder.PatternLayoutEncoder
 statusListener(OnConsoleStatusListener)
 
 appender("FILE", RollingFileAppender) {
-    file = "/var/log/converter.log"
+    file = "./converter.log"
 
     rollingPolicy(SizeAndTimeBasedRollingPolicy) {
-        fileNamePattern = "/var/log/converter.%d{yyyy-MM-dd}.%i.log"
+        fileNamePattern = "./converter.%d{yyyy-MM-dd}.%i.log"
         maxHistory = 30
         maxFileSize = "50MB"
         totalSizeCap = "5GB"
